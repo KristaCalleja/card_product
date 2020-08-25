@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
 
 * {
-    padding: 0;
     margin: 0;
 }
 
@@ -15,4 +14,61 @@
 body {
     background-color: var(--Light-Grayish-Blue);
     font-family: 'Manrope', sans-serif;
+    margin-top: 150px;
+    max-width: 1440px;
+    padding: 0 290px;
 }
+
+h2 {
+    font-size: 24px;
+    color: var(--Very-Dark-Grayish-Blue);
+    line-height: 1.4em;
+    font-weight: 700;
+}
+
+p {
+    font-size: 15px;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 500;
+    line-height: 1.6em;
+}
+
+.card-product {
+    display: flex;
+    height: 300px;
+    overflow: hidden;
+    /* background-color: var(--Grayish-Blue); */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+.card-product img {
+    height: 100%;
+}
+
+.card-product-infos {
+    border: 1px red solid;
+
+    padding: 30px
+}
+
+.card-product-infos p {
+    margin-top: 15px;
+}
+
+.card-product-seller {
+    border: 1px green solid;
+
+    display: flex;
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.share { 
+    float: right;
+}
+
