@@ -25,6 +25,9 @@ body{
     background: white;
 }
 .card__image{
+    background-image: url(images/drawers.jpg);
+    background-size: 332px 238px;
+    background-repeat: no-repeat;
     width: 100%;
     border-radius: 20px 20px 0 0;
     height: 199px;
@@ -96,6 +99,8 @@ p:first-child{
         box-shadow: 5px 4px 15px -1px rgba(0,0,0,0.67);
     }
     .card__image{
+        background-size: 362px 315px;
+        background-repeat: no-repeat;
         height: 100%;
         border-radius: 20px 0 0 20px;
     }
