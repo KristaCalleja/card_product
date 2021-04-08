@@ -23,6 +23,7 @@ body{
     max-width: 326px;
     border-radius: 20px;
     background: white;
+    position: absolute;
 }
 .card__image{
     background-image: url(images/drawers.jpg);
@@ -67,13 +68,7 @@ p:first-child{
     margin-bottom: 2px;
 }
 .footer-overlay{
-    display: flex;
-    justify-content: space-around;
-    background: var(--bold-blue-text);
-    color: var(--paragraph-blue);
-    align-items: center;
-    padding: 1.5em 1.5em;
-    border-radius: 0 0 20px 20px;
+    
 }
 .footer__title-overlay{
     letter-spacing: .4em;
@@ -81,7 +76,8 @@ p:first-child{
 }
 .footer__social-icons-overlay{
     color:var(--background-blue);
-    font-size: 24px;
+    font-size: 18px;
+    letter-spacing: 1em;
 }
 .footer__icon{
     color: var(--overlay-background);
@@ -89,6 +85,7 @@ p:first-child{
     border-radius: 50%;
     background: var(--background-blue);
     border: 7px var(--background-blue) solid;
+    cursor: pointer;
 }
 /* For desktop design */
 @media (min-width: 900px){
@@ -111,7 +108,18 @@ p:first-child{
     .footer{
         padding: 0;
     }
-    .footer-overlay{
+    .footer-overlay .active{
         position: initial;
+        width: 244px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        background: var(--bold-blue-text);
+        color: var(--paragraph-blue);
+        align-items: center;
+        padding: 0em;
+        border-radius: 9px;
+        position: initial;
+        z-index: 1;
     }
 }
