@@ -111,4 +111,7 @@ p:first-child{
     .footer{
         padding: 0;
     }
+    .footer-overlay{
+        position: initial;
+    }
 }
