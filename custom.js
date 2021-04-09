@@ -1,5 +1,6 @@
 // Select footer-overlay
-let footerOverlay = document.querySelector('.footer-overlay');
+let footerOverlayDesktop = document.querySelector('.footer-overlay__desktop');
+let footerOverlayMobile = document.querySelector('.footer-overlay__mobile');
 
 // Select button for assigning handler
 let button = document.querySelector('.footer__icon');
@@ -10,5 +11,9 @@ let footer = document.querySelector('.footer');
 // Function to assign handler using a DOM property on event
 button.addEventListener('click', function(){
 // Special method 'replaceWith' to replace node with given node
-    footerOverlay.classList.toggle('active');
+    footerOverlayDesktop.classList.toggle('active');
+});
+
+button.addEventListener('click', function(){
+    footer.replaceWith(footerOverlayMobile);
 });
