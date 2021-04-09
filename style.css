@@ -21,6 +21,7 @@ body{
     /* Default setting for mobile */
     display: block;
     /* Set in relation to the footer-overlay */
+    position: relative;
     max-width: 326px;
     border-radius: 20px;
     background: white;
@@ -54,7 +55,11 @@ body{
     align-items: baseline;
     place-items: center;
     padding: 1em 0;
+    bottom: 0;
+    position: relative;
+    z-index: 10;
 }
+
 .footer__avatar{
     width: 40px;
     border-radius: 50%;
@@ -68,23 +73,39 @@ p:first-child{
     margin-bottom: 2px;
 }
 .footer-overlay{
-    z-index: 1;
+    /* Default hidden visibility */
+    visibility: hidden;
+    position: absolute;
+    width: 88%;
+    height: 35px;
+    z-index: 10;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     background: var(--bold-blue-text);
     color: var(--paragraph-blue);
     align-items: center;
-    padding: 1.5em 1.5em;
+    padding: 1.5em;
     border-radius: 0 0 20px 20px;
+    bottom: 0;
+}
+/* JS toggle function */
+.visible{
+    visibility: visible;
+}
+.display{
+    display: none;
 }
 .footer__title-overlay{
     letter-spacing: .4em;
     text-transform: uppercase;
 }
 .footer__social-icons-overlay{
+    border: 1px red solid;
     color:var(--background-blue);
-    font-size: 18px;
+    font-size: 22px;
     letter-spacing: 1em;
+    justify-content: center;
+    align-items: center;
 }
 .footer__icon{
     color: var(--overlay-background);
@@ -93,6 +114,7 @@ p:first-child{
     background: var(--background-blue);
     border: 7px var(--background-blue) solid;
     cursor: pointer;
+    z-index: 10;
 }
 /* For desktop design */
 @media (min-width: 900px){
