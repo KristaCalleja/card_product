@@ -100,7 +100,7 @@ p:first-child{
     text-transform: uppercase;
 }
 .footer__social-icons-overlay{
-    border: 1px red solid;
+    /* border: 1px red solid; */
     color:var(--background-blue);
     font-size: 22px;
     letter-spacing: 1em;
@@ -108,13 +108,14 @@ p:first-child{
     align-items: center;
 }
 .footer__icon{
+    position: absolute;
     color: var(--overlay-background);
     font-size: 20px;
     border-radius: 50%;
     background: var(--background-blue);
     border: 7px var(--background-blue) solid;
     cursor: pointer;
-    z-index: 10;
+    z-index: 2;
 }
 /* For desktop design */
 @media (min-width: 900px){
@@ -139,8 +140,8 @@ p:first-child{
     }
     .footer-overlay{
         position: absolute;
-        left: 1136px;
-        top: 499px;;
+        left: 536px;
+        top: 199px;;
         width: 244px;
         height: 50px;
         border-radius: 9px;
