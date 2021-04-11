@@ -57,7 +57,7 @@ body{
     padding: 1em 0;
     bottom: 0;
     position: relative;
-    z-index: 10;
+    /* z-index: 10; */
 }
 
 .footer__avatar{
@@ -78,7 +78,7 @@ p:first-child{
     position: absolute;
     width: 88%;
     height: 35px;
-    z-index: 10;
+    /* z-index: 10; */
     display: flex;
     justify-content: flex-start;
     background: var(--bold-blue-text);
